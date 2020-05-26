@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="day_to_day_expenses.Confirmer_Delete_DBController">
+   <children>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="59.0" prefHeight="35.0" prefWidth="417.0" style="-fx-background-color: white; -fx-background-radius: 25;" text="Are You Sure?">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="52.0" layoutY="119.0" prefHeight="28.0" prefWidth="483.0" style="-fx-background-color: red; -fx-background-radius: 0;" text="Clearing data-base is IRREVERSIBLE!">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="yes_clear_db" layoutX="384.0" layoutY="227.0" mnemonicParsing="false" onAction="#OK_Clear_DB" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: pink;" stylesheets="@hover_small.css" text="Yes, Clear !" />
+      <Button fx:id="no_dont_clear_db" layoutX="80.0" layoutY="227.0" mnemonicParsing="false" onAction="#No_Dont_clear_DB" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" stylesheets="@hover.css" text="No, Take Me Back !" />
+   </children>
+</AnchorPane>
